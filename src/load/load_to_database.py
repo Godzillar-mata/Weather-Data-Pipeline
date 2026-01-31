@@ -4,11 +4,11 @@ from src.transform.clean_data import clean_weather_data
 from src.utils.config import MYSQL_HOST, MYSQL_PORT, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DATABASE, MYSQL_TABLE
 
 # 5 
-def load_weather_data_to_db(df_cleaned):
+def load_weather_data_to_db(cleaned_data):
     try:
         rows = [
             tuple(row.values())
-            for row in df_cleaned.iter_rows(named=True)
+            for row in cleaned_data.iter_rows(named=True)
         ]
         print("get data input successfully")
 
