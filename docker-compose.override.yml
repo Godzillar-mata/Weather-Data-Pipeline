@@ -1,0 +1,20 @@
+services:
+  airflow-apiserver:
+    environment:
+      MYSQL_HOST: host.docker.internal
+
+  airflow-scheduler:
+    environment:
+      MYSQL_HOST: host.docker.internal
+
+  airflow-worker:
+    environment:
+      MYSQL_HOST: host.docker.internal
+
+  airflow-dag-processor:
+    environment:
+      MYSQL_HOST: host.docker.internal
+
+  airflow-triggerer:
+    environment:
+      MYSQL_HOST: host.docker.internal
