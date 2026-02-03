@@ -22,6 +22,9 @@ def main():
 
         # Load
         load_weather_data_to_db(cleaned_data)
+        
+        logging.info("Run pipeline successfully")
+
     except Exception:
         logging.error("Pipeline failed")
 
