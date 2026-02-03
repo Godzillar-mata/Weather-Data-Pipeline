@@ -32,6 +32,8 @@ spark-warehouse/
 .metastore_db/
 
 # Airflow
+config/
 logs/
+plugins/
 airflow.db
 dag_processor/
