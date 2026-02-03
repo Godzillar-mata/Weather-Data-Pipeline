@@ -46,10 +46,10 @@ def transform_and_load_weather():
 
 # DAG
 @dag(
-    dag_id = "my_testing_dag",
+    dag_id = "Weather-data-pipeline-dag",
     default_args=default_args, 
     schedule='@daily', 
-    start_date=datetime(2026,2,1), 
+    start_date=datetime(2026,2,3), 
     tags=["workshop"]
 )
 
